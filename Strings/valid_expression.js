@@ -1,3 +1,7 @@
+// Implement a function to check whether a given string is a valid mathematical
+// expression (only digits, +,-,*,, and parentheses) and whether the
+// parentheses are balanced
+
 let expression = prompt("Enter a mathematical expression:");
 
 function isValidExpression(expression){
@@ -19,5 +23,10 @@ function isValidExpression(expression){
 
     return true; // valid
 }
-
-console.log(isValidExpression(expression));
+//Result
+let result = (isValidExpression(expression));
+if (result == true) {
+    console.log("Valid expression:", expression);
+} else {
+    console.log("Invalid expression:", expression);
+}
