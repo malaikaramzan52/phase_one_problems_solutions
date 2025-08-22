@@ -2,6 +2,7 @@
 // expression (only digits, +,-,*,, and parentheses) and whether the
 // parentheses are balanced
 
+
 let expression = prompt("Enter a mathematical expression:");
 
 function isValidExpression(expression){
