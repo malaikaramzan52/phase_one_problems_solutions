@@ -15,15 +15,15 @@ const conversionRates = {
     PKR: { USD: 0.0035, EUR: 0.00306, GBP: 0.00266, INR: 0.31 }
 };
 function convertCurrency(fromCurrency, toCurrency, amount) {
+    //both currencies are same.
+    if (fromCurrency === toCurrency) {
+        return amount; // No conversion needed
+    }
     //check if user do not enter valid currencies
     if (!conversionRates[fromCurrency] || !conversionRates[fromCurrency][toCurrency]) {
         console.log("Invalid currency selection.");
         return null;
     }
-    if (fromCurrency === toCurrency) {
-        return amount; // No conversion needed
-    }
-    
     //conversionRates["USD"]["PKR"];
     const rate = conversionRates[fromCurrency][toCurrency];
     return amount * rate;
