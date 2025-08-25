@@ -1,6 +1,5 @@
 // Create a simple rule-based chatbot that responds differently based on user
 //  input keywords, using only if/elif/else
-    
 let userInput = prompt("Hi! I am a chatbot");
 userInput = userInput.toLowerCase();
 let response;
@@ -20,3 +19,4 @@ else {
     response = "Sorry, I don't understand that.";
 }
 console.log(response);
+
